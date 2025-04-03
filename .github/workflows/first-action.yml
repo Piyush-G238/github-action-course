@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest # defining runner (predefined/custom)
     steps:
       - name: Print greeting on shell
-        run: echo "Hello, world!" # step-1 execution
+        run: |
+            echo "Hey everybody, piyush this side!" # step-1 execution
+            echo "and we are running our first ci/cd pipeline"
       - name: Print goodbye on shell
         run: echo "Good bye, everyone!" #step-2 execution
