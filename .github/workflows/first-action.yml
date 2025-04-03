@@ -1,0 +1,10 @@
+name: First Action Workflow # name of workflow
+on: workflow_dispatch # manually start the workflow
+jobs:
+  first_job: # any name
+    runs-on: ubuntu-latest # defining runner (predefined/custom)
+    steps:
+      - name: Print greeting on shell
+        run: echo "Hello, world!" # step-1 execution
+      - name: Print goodbye on shell
+        run: echo "Good bye, everyone!" #step-2 execution
